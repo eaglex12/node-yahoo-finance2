@@ -154,9 +154,7 @@ function validate({
   const _errors = validateAndCoerce(
     object,
     schemaKey,
-    definitions,
-    logger,
-    logObj,
+    { definitions, logger, logObj },
   );
   // if (_errors === false || !_errors.length) return;
   if (_errors.length === 0) return;
