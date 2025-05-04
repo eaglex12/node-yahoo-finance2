@@ -29,18 +29,16 @@
           "const": "quotes"
         },
         "score": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "newListingDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "prevName": {
           "type": "string"
         },
         "nameChangeDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "sector": {
           "type": "string"
@@ -88,18 +86,16 @@
           "const": "quotes"
         },
         "score": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "newListingDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "prevName": {
           "type": "string"
         },
         "nameChangeDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "sector": {
           "type": "string"
@@ -128,11 +124,9 @@
       "required": [
         "exchange",
         "index",
-        "industryDisp",
         "isYahooFinance",
         "quoteType",
         "score",
-        "sectorDisp",
         "symbol",
         "typeDisp"
       ],
@@ -165,18 +159,16 @@
           "const": "quotes"
         },
         "score": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "newListingDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "prevName": {
           "type": "string"
         },
         "nameChangeDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "sector": {
           "type": "string"
@@ -234,18 +226,16 @@
           "const": "quotes"
         },
         "score": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "newListingDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "prevName": {
           "type": "string"
         },
         "nameChangeDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "sector": {
           "type": "string"
@@ -303,18 +293,16 @@
           "const": "quotes"
         },
         "score": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "newListingDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "prevName": {
           "type": "string"
         },
         "nameChangeDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "sector": {
           "type": "string"
@@ -372,18 +360,16 @@
           "const": "quotes"
         },
         "score": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "newListingDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "prevName": {
           "type": "string"
         },
         "nameChangeDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "sector": {
           "type": "string"
@@ -441,18 +427,16 @@
           "const": "quotes"
         },
         "score": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "newListingDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "prevName": {
           "type": "string"
         },
         "nameChangeDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "sector": {
           "type": "string"
@@ -510,18 +494,16 @@
           "const": "quotes"
         },
         "score": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "newListingDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "prevName": {
           "type": "string"
         },
         "nameChangeDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "sector": {
           "type": "string"
@@ -579,18 +561,16 @@
           "const": "quotes"
         },
         "score": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "newListingDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "prevName": {
           "type": "string"
         },
         "nameChangeDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "sector": {
           "type": "string"
@@ -651,18 +631,16 @@
           "const": "quotes"
         },
         "score": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "newListingDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "prevName": {
           "type": "string"
         },
         "nameChangeDate": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "sector": {
           "type": "string"
@@ -734,8 +712,7 @@
           "type": "string"
         },
         "providerPublishTime": {
-          "type": "string",
-          "format": "date-time"
+          "yahooFinanceType": "date"
         },
         "type": {
           "type": "string"
@@ -779,10 +756,10 @@
           "type": "string"
         },
         "width": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "height": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "tag": {
           "type": "string"
@@ -804,7 +781,7 @@
           "items": {}
         },
         "count": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "quotes": {
           "type": "array",
@@ -862,7 +839,7 @@
           "items": {}
         },
         "totalTime": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "screenerFieldResults": {
           "type": "array",
@@ -873,34 +850,34 @@
           "items": {}
         },
         "timeTakenForQuotes": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "timeTakenForNews": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "timeTakenForAlgowatchlist": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "timeTakenForPredefinedScreener": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "timeTakenForCrunchbase": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "timeTakenForNav": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "timeTakenForResearchReports": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "timeTakenForScreenerField": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "timeTakenForCulturalAssets": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "timeTakenForSearchLists": {
-          "type": "number"
+          "yahooFinanceType": "number"
         }
       },
       "required": [
@@ -935,10 +912,10 @@
           "type": "string"
         },
         "quotesCount": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "newsCount": {
-          "type": "number"
+          "yahooFinanceType": "number"
         },
         "enableFuzzyQuery": {
           "type": "boolean"

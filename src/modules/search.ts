@@ -31,8 +31,8 @@ export interface SearchQuoteYahoo {
 export interface SearchQuoteYahooEquity extends SearchQuoteYahoo {
   quoteType: "EQUITY";
   typeDisp: "Equity";
-  sectorDisp: string; // "Technology",
-  industryDisp: string; // "Consumer Electronics"
+  sectorDisp?: string; // "Technology",
+  industryDisp?: string; // "Consumer Electronics"
 }
 export interface SearchQuoteYahooOption extends SearchQuoteYahoo {
   quoteType: "OPTION";
@@ -65,8 +65,8 @@ export interface SearchQuoteYahooFuture extends SearchQuoteYahoo {
 }
 
 export interface SearchQuoteYahooMoneyMarket extends SearchQuoteYahoo {
-  quoteType: 'MONEY_MARKET';
-  typeDisp: 'MoneyMarket';
+  quoteType: "MONEY_MARKET";
+  typeDisp: "MoneyMarket";
 }
 
 export interface SearchQuoteNonYahoo {
