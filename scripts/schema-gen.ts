@@ -12,10 +12,10 @@ import {
 
 // @ts-expect-error: no types
 import schemaWalker from "oas-schema-walker";
-import walkerCallback from "./schema/postWalker.js";
+// import walkerCallback from "./schema/postWalker.js";
 
-import yfNumberTypeFormatter from "./schema/TypeFormatter/yfNumberTypeFormatter.ts";
-import yfReferenceTypeFormatter from "./schema/TypeFormatter/yfReferenceTypeFormatter.ts";
+// import yfNumberTypeFormatter from "./schema/TypeFormatter/yfNumberTypeFormatter.ts";
+// import yfReferenceTypeFormatter from "./schema/TypeFormatter/yfReferenceTypeFormatter.ts";
 import yfFunctionIgnorer from "./schema/TypeFormatter/yfFunctionIgnorer.ts";
 
 // TODO, we should also lstat this file and all it's imports!
@@ -56,8 +56,9 @@ function createSchema(path: string, force = false) {
 
   const formatter = createFormatter(
     config,
-    (chainTypeFormatter, circularReferenceTypeFormatter) => {
+    (chainTypeFormatter, _circularReferenceTypeFormatter) => {
       chainTypeFormatter
+        /*
         .addTypeFormatter(
           new yfReferenceTypeFormatter(
             circularReferenceTypeFormatter,
@@ -65,6 +66,7 @@ function createSchema(path: string, force = false) {
           ),
         )
         .addTypeFormatter(new yfNumberTypeFormatter())
+        */
         .addTypeFormatter(new yfFunctionIgnorer());
     },
   );
@@ -108,11 +110,13 @@ function createSchema(path: string, force = false) {
     ..._schema!,
   };
 
+  /*
   // @ts-expect-error: no types
   for (const key of Object.keys(schema.definitions)) {
     // @ts-expect-error: no types
     schemaWalker.walkSchema(schema.definitions[key], {}, {}, walkerCallback);
   }
+  */
 
   const schemaString = JSON.stringify(schema, null, 2);
 

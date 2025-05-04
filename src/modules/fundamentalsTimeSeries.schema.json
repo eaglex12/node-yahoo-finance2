@@ -13,7 +13,8 @@
       "type": "object",
       "properties": {
         "date": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "TYPE": {
           "type": "string",
@@ -23,430 +24,430 @@
           "$ref": "#/definitions/FundamentalsTimeSeries_Period"
         },
         "totalRevenue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "operatingRevenue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "costOfRevenue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "grossProfit": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sellingGeneralAndAdministration": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sellingAndMarketingExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "generalAndAdministrativeExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherGandA": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "researchAndDevelopment": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depreciationAmortizationDepletionIncomeStatement": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depletionIncomeStatement": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depreciationAndAmortizationInIncomeStatement": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "amortization": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "amortizationOfIntangiblesIncomeStatement": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depreciationIncomeStatement": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherOperatingExpenses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "operatingExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "operatingIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestExpenseNonOperating": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestIncomeNonOperating": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalOtherFinanceCost": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netNonOperatingInterestIncomeExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "writeOff": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "specialIncomeCharges": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "gainOnSaleOfPPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "gainOnSaleOfBusiness": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "gainOnSaleOfSecurity": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherSpecialCharges": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherIncomeExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherNonOperatingIncomeExpenses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalExpenses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "pretaxIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "taxProvision": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeContinuousOperations": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeIncludingNoncontrollingInterests": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "minorityInterests": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeFromTaxLossCarryforward": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeExtraordinary": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeDiscontinuousOperations": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preferredStockDividends": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherunderPreferredStockDividend": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeCommonStockholders": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "basicAverageShares": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dilutedAverageShares": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendPerShare": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "reportedNormalizedBasicEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "continuingAndDiscontinuedBasicEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "basicEPSOtherGainsLosses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "taxLossCarryforwardBasicEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "normalizedBasicEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "basicEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "basicAccountingChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "basicExtraordinary": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "basicDiscontinuousOperations": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "basicContinuousOperations": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "reportedNormalizedDilutedEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "continuingAndDiscontinuedDilutedEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "taxLossCarryforwardDilutedEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDilutionEarnings": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "normalizedDilutedEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dilutedEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dilutedAccountingChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dilutedExtraordinary": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dilutedContinuousOperations": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dilutedDiscontinuousOperations": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dilutedNIAvailtoComStockholders": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dilutedEPSOtherGainsLosses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalOperatingIncomeAsReported": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeFromContinuingAndDiscontinuedOperation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "normalizedIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netInterestIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "EBIT": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "EBITDA": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "reconciledCostOfRevenue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "reconciledDepreciation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeFromContinuingOperationNetMinorityInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalUnusualItemsExcludingGoodwill": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalUnusualItems": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "normalizedEBITDA": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "taxRateForCalcs": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "taxEffectOfUnusualItems": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "rentExpenseSupplemental": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "earningsFromEquityInterestNetOfTax": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "impairmentOfCapitalAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "restructuringAndMergernAcquisition": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "securitiesAmortization": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "earningsFromEquityInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherTaxes": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "provisionForDoubtfulAccounts": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "insuranceAndClaims": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "rentAndLandingFees": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "salariesAndWages": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "exciseTaxes": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalMoneyMarketInvestments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestIncomeAfterProvisionForLoanLoss": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherThanPreferredStockDividend": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "lossonExtinguishmentofDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "incomefromAssociatesandOtherParticipatingInterests": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonInterestExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherNonInterestExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "professionalExpenseAndContractServicesExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "occupancyAndEquipment": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "equipment": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netOccupancyExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "creditLossesProvision": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonInterestIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherNonInterestIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "gainLossonSaleofAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "gainonSaleofInvestmentProperty": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "gainonSaleofLoans": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "foreignExchangeTradingGains": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "tradingGainLoss": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "investmentBankingProfit": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "feesAndCommissions": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "feesandCommissionExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "feesandCommissionIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherCustomerServices": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "creditCard": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "securitiesActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trustFeesbyCommissions": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "serviceChargeOnDepositorAccounts": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalPremiumsEarned": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherInterestExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestExpenseForFederalFundsSoldAndSecuritiesPurchaseUnderAgreementsToResell": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestExpenseForLongTermDebtAndCapitalSecurities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestExpenseForShortTermDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestExpenseForDeposit": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherInterestIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestIncomeFromFederalFundsSoldAndSecuritiesPurchaseUnderAgreementsToResell": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestIncomeFromDeposits": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestIncomeFromSecurities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestIncomeFromLoansAndLease": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestIncomeFromLeases": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestIncomeFromLoans": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depreciationDepreciationIncomeStatement": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "operationAndMaintenance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherCostofRevenue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "explorationDevelopmentAndMineralPropertyLeaseExpenses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -460,7 +461,8 @@
       "type": "object",
       "properties": {
         "date": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "TYPE": {
           "type": "string",
@@ -470,859 +472,859 @@
           "$ref": "#/definitions/FundamentalsTimeSeries_Period"
         },
         "netDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "treasurySharesNumber": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preferredSharesNumber": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ordinarySharesNumber": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "shareIssued": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "tangibleBookValue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "investedCapital": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "workingCapital": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netTangibleAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "capitalLeaseObligations": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "commonStockEquity": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preferredStockEquity": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalCapitalization": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalEquityGrossMinorityInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "minorityInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "stockholdersEquity": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherEquityInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "gainsLossesNotAffectingRetainedEarnings": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherEquityAdjustments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fixedAssetsRevaluationReserve": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "foreignCurrencyTranslationAdjustments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "minimumPensionLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "unrealizedGainLoss": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "treasuryStock": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "retainedEarnings": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "additionalPaidInCapital": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "capitalStock": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherCapitalStock": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "commonStock": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preferredStock": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalPartnershipCapital": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "generalPartnershipCapital": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "limitedPartnershipCapital": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalLiabilitiesNetMinorityInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalNonCurrentLiabilitiesNetMinorityInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherNonCurrentLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "liabilitiesHeldforSaleNonCurrent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "restrictedCommonStock": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preferredSecuritiesOutsideStockEquity": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "derivativeProductLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "employeeBenefits": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonCurrentPensionAndOtherPostretirementBenefitPlans": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonCurrentAccruedExpenses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "duetoRelatedPartiesNonCurrent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "tradeandOtherPayablesNonCurrent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonCurrentDeferredLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonCurrentDeferredRevenue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonCurrentDeferredTaxesLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "longTermDebtAndCapitalLeaseObligation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "longTermCapitalLeaseObligation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "longTermDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "longTermProvisions": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherCurrentLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentDeferredLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentDeferredRevenue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentDeferredTaxesLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentDebtAndCapitalLeaseObligation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentCapitalLeaseObligation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherCurrentBorrowings": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "lineOfCredit": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "commercialPaper": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentNotesPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "pensionandOtherPostRetirementBenefitPlansCurrent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentProvisions": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "payablesAndAccruedExpenses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentAccruedExpenses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "payables": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "duetoRelatedPartiesCurrent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendsPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalTaxPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "incomeTaxPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "accountsPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalNonCurrentAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherNonCurrentAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "definedPensionBenefit": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonCurrentPrepaidAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonCurrentDeferredAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonCurrentDeferredTaxesAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "duefromRelatedPartiesNonCurrent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonCurrentNoteReceivables": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonCurrentAccountsReceivable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "financialAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "investmentsAndAdvances": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherInvestments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "investmentinFinancialAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "heldToMaturitySecurities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "availableForSaleSecurities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "financialAssetsDesignatedasFairValueThroughProfitorLossTotal": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "tradingSecurities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "longTermEquityInvestment": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "investmentsinJointVenturesatCost": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "investmentsInOtherVenturesUnderEquityMethod": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "investmentsinAssociatesatCost": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "investmentsinSubsidiariesatCost": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "investmentProperties": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "goodwillAndOtherIntangibleAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherIntangibleAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "goodwill": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netPPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "accumulatedDepreciation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "grossPPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "leases": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "constructionInProgress": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherProperties": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "machineryFurnitureEquipment": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "buildingsAndImprovements": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "landAndImprovements": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "properties": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherCurrentAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "hedgingAssetsCurrent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "assetsHeldForSaleCurrent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentDeferredAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentDeferredTaxesAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "restrictedCash": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "prepaidAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "inventory": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "inventoriesAdjustmentsAllowances": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherInventories": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "finishedGoods": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "workInProcess": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "rawMaterials": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "receivables": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "receivablesAdjustmentsAllowances": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherReceivables": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "duefromRelatedPartiesCurrent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "taxesReceivable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "accruedInterestReceivable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "notesReceivable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "loansReceivable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "accountsReceivable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "allowanceForDoubtfulAccountsReceivable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "grossAccountsReceivable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashCashEquivalentsAndShortTermInvestments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherShortTermInvestments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashAndCashEquivalents": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashEquivalents": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFinancial": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "liabilitiesOfDiscontinuedOperations": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "subordinatedLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "advanceFromFederalHomeLoanBanks": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "tradingLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "duetoRelatedParties": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "securitiesLoaned": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "federalFundsPurchasedAndSecuritiesSoldUnderAgreementToRepurchase": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "financialInstrumentsSoldUnderAgreementsToRepurchase": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "federalFundsPurchased": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalDeposits": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "nonInterestBearingDeposits": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestBearingDepositsLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "customerAccounts": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depositsbyBank": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "assetsHeldForSale": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "deferredAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "deferredTaxAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dueFromRelatedParties": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "allowanceForNotesReceivable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "grossNotesReceivable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netLoan": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "unearnedIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "allowanceForLoansAndLeaseLosses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "grossLoan": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherLoanAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "mortgageLoan": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "consumerLoan": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "commercialLoan": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "loansHeldForSale": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "derivativeAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "securitiesAndInvestments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bankOwnedLifeInsurance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherRealEstateOwned": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "foreclosedAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "customerAcceptances": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "federalHomeLoanBankStock": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "securityBorrowed": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashCashEquivalentsAndFederalFundsSold": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "moneyMarketInvestments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "federalFundsSoldAndSecuritiesPurchaseUnderAgreementsToResell": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "securityAgreeToBeResell": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "federalFundsSold": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "restrictedCashAndInvestments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "restrictedInvestments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "restrictedCashAndCashEquivalents": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestBearingDepositsAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashAndDueFromBanks": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bankIndebtedness": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "mineralProperties": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netPPEPurchaseAndSale": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "purchaseOfInvestment": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "investingCashFlow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "grossProfit": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFlowFromContinuingOperatingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "endCashPosition": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeCommonStockholders": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInAccountPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherNonCashItems": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashDividendsPaid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dilutedAverageShares": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "repurchaseOfCapitalStock": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "EBITDA": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "stockBasedCompensation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "commonStockDividendPaid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "costOfRevenue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "operatingExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInInventory": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "normalizedIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeIncludingNoncontrollingInterests": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeFromContinuingOperationNetMinorityInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "reconciledCostOfRevenue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherIncomeExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netInvestmentPurchaseAndSale": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "purchaseOfPPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "taxProvision": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "pretaxIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "researchAndDevelopment": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "longTermDebtPayments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInReceivables": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dilutedEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIssuancePaymentsOfDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netShortTermDebtIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depreciationAndAmortization": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFlowFromContinuingInvestingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "beginningCashPosition": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changesInCash": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "financingCashFlow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInOtherCurrentLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInWorkingCapital": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "operatingIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalRevenue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeFromContinuingAndDiscontinuedOperation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "operatingRevenue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInPayablesAndAccruedExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netCommonStockIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "commonStockPayments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "EBIT": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netOtherInvestingChanges": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "basicEPS": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "shortTermDebtPayments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sellingGeneralAndAdministration": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeContinuousOperations": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "repaymentOfDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalOperatingIncomeAsReported": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "normalizedEBITDA": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "capitalExpenditure": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFlowFromContinuingFinancingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netOtherFinancingCharges": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "basicAverageShares": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netLongTermDebtIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depreciationAmortizationDepletion": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "operatingCashFlow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dilutedNIAvailtoComStockholders": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeFromContinuingOperations": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "taxRateForCalcs": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "freeCashFlow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherNonOperatingIncomeExpenses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changesInAccountReceivables": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "totalExpenses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInOtherCurrentAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "reconciledDepreciation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "incomeTaxPaidSupplementalData": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "saleOfInvestment": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestPaidSupplementalData": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "deferredTax": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInOtherWorkingCapital": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestIncomeNonOperating": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "issuanceOfDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "purchaseOfBusiness": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "longTermDebtIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netInterestIncome": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "deferredIncomeTax": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netNonOperatingInterestIncomeExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestExpenseNonOperating": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netBusinessPurchaseAndSale": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -1336,7 +1338,8 @@
       "type": "object",
       "properties": {
         "date": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "TYPE": {
           "type": "string",
@@ -1346,445 +1349,445 @@
           "$ref": "#/definitions/FundamentalsTimeSeries_Period"
         },
         "freeCashFlow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "foreignSales": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "domesticSales": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "adjustedGeographySegmentData": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "repurchaseOfCapitalStock": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "repaymentOfDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "issuanceOfDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "issuanceOfCapitalStock": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "capitalExpenditure": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestPaidSupplementalData": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "incomeTaxPaidSupplementalData": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "endCashPosition": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherCashAdjustmentOutsideChangeinCash": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "beginningCashPosition": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "effectOfExchangeRateChanges": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changesInCash": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherCashAdjustmentInsideChangeinCash": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFlowFromDiscontinuedOperation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "financingCashFlow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFromDiscontinuedFinancingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFlowFromContinuingFinancingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netOtherFinancingCharges": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestPaidCFF": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "proceedsFromStockOptionExercised": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashDividendsPaid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preferredStockDividendPaid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "commonStockDividendPaid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netPreferredStockIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preferredStockPayments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preferredStockIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netCommonStockIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "commonStockPayments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "commonStockIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIssuancePaymentsOfDebt": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netShortTermDebtIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "shortTermDebtPayments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "shortTermDebtIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netLongTermDebtIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "longTermDebtPayments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "longTermDebtIssuance": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "investingCashFlow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFromDiscontinuedInvestingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFlowFromContinuingInvestingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netOtherInvestingChanges": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestReceivedCFI": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendsReceivedCFI": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netInvestmentPurchaseAndSale": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "saleOfInvestment": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "purchaseOfInvestment": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netInvestmentPropertiesPurchaseAndSale": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "saleOfInvestmentProperties": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "purchaseOfInvestmentProperties": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netBusinessPurchaseAndSale": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "saleOfBusiness": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "purchaseOfBusiness": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIntangiblesPurchaseAndSale": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "saleOfIntangibles": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "purchaseOfIntangibles": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netPPEPurchaseAndSale": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "saleOfPPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "purchaseOfPPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "capitalExpenditureReported": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "operatingCashFlow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFromDiscontinuedOperatingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFlowFromContinuingOperatingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "taxesRefundPaid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestReceivedCFO": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestPaidCFO": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendReceivedCFO": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendPaidCFO": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInWorkingCapital": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInOtherWorkingCapital": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInOtherCurrentLiabilities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInOtherCurrentAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInPayablesAndAccruedExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInAccruedExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInInterestPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInDividendPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInAccountPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInTaxPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInIncomeTaxPayable": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInPrepaidAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInInventory": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInReceivables": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changesInAccountReceivables": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherNonCashItems": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "excessTaxBenefitFromStockBasedCompensation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "stockBasedCompensation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "unrealizedGainLossOnInvestmentSecurities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "provisionandWriteOffofAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "assetImpairmentCharge": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "amortizationOfSecurities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "deferredTax": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "deferredIncomeTax": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depletion": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depreciationAndAmortization": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "amortizationCashFlow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "amortizationOfIntangibles": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depreciation": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "operatingGainsLosses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "pensionAndEmployeeBenefitExpense": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "earningsLossesFromEquityInvestments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "gainLossOnInvestmentSecurities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netForeignCurrencyExchangeGainLoss": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "gainLossOnSaleOfPPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "gainLossOnSaleOfBusiness": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netIncomeFromContinuingOperations": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashFlowsfromusedinOperatingActivitiesDirect": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "taxesRefundPaidDirect": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestReceivedDirect": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestPaidDirect": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendsReceivedDirect": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendsPaidDirect": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "classesofCashPayments": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherCashPaymentsfromOperatingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "paymentsonBehalfofEmployees": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "paymentstoSuppliersforGoodsandServices": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "classesofCashReceiptsfromOperatingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "otherCashReceiptsfromOperatingActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "receiptsfromGovernmentGrants": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "receiptsfromCustomers": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "increaseDecreaseInDeposit": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInFederalFundsAndSecuritiesSoldForRepurchase": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netProceedsPaymentForLoan": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "paymentForLoans": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "proceedsFromLoans": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "proceedsPaymentInInterestBearingDepositsInBank": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "increaseinInterestBearingDepositsinBank": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "decreaseinInterestBearingDepositsinBank": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "proceedsPaymentFederalFundsSoldAndSecuritiesPurchasedUnderAgreementToResell": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInLoans": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "changeInDeferredCharges": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "provisionForLoanLeaseAndOtherLosses": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "amortizationOfFinancingCostsAndDiscounts": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "depreciationAmortizationDepletion": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "realizedGainLossOnSaleOfLoansAndLease": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "allTaxesPaid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "interestandCommissionPaid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashPaymentsforLoans": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashPaymentsforDepositsbyBanksandCustomers": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashReceiptsfromFeesandCommissions": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashReceiptsfromSecuritiesRelatedActivities": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashReceiptsfromLoans": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashReceiptsfromDepositsbyBanksandCustomers": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "cashReceiptsfromTaxRefunds": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "AmortizationAmortizationCashFlow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -1819,10 +1822,11 @@
         "period1": {
           "anyOf": [
             {
-              "yahooFinanceType": "date"
+              "type": "string",
+              "format": "date-time"
             },
             {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             {
               "type": "string"
@@ -1832,10 +1836,11 @@
         "period2": {
           "anyOf": [
             {
-              "yahooFinanceType": "date"
+              "type": "string",
+              "format": "date-time"
             },
             {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             {
               "type": "string"

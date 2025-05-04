@@ -158,7 +158,8 @@ function validate({
     logger,
     logObj,
   );
-  if (_errors === false || !_errors.length) return;
+  // if (_errors === false || !_errors.length) return;
+  if (_errors.length === 0) return;
 
   const errors = aggregateErrors(_errors);
 

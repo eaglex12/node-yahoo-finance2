@@ -11,7 +11,7 @@
             "type": "object",
             "properties": {
               "score": {
-                "yahooFinanceType": "number"
+                "type": "number"
               },
               "symbol": {
                 "type": "string"

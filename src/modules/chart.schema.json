@@ -11,7 +11,7 @@
         "timestamp": {
           "type": "array",
           "items": {
-            "yahooFinanceType": "number"
+            "type": "number"
           }
         },
         "events": {
@@ -43,22 +43,31 @@
           "type": "string"
         },
         "fiftyTwoWeekHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "firstTradeDate": {
-          "yahooFinanceType": "date|null"
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "fullExchangeName": {
           "type": "string"
         },
         "regularMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "gmtoffset": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "hasPrePostMarketData": {
           "type": "boolean"
@@ -70,22 +79,22 @@
           "type": "string"
         },
         "regularMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "chartPreviousClose": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "previousClose": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketVolume": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "longName": {
           "type": "string"
@@ -94,10 +103,10 @@
           "type": "string"
         },
         "scale": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceHint": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "currentTradingPeriod": {
           "type": "object",
@@ -174,13 +183,15 @@
           "type": "string"
         },
         "start": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "end": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "gmtoffset": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -246,10 +257,11 @@
       "type": "object",
       "properties": {
         "amount": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "date": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         }
       },
       "required": [
@@ -268,13 +280,14 @@
       "type": "object",
       "properties": {
         "date": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "numerator": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "denominator": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "splitRatio": {
           "type": "string"
@@ -315,31 +328,46 @@
         "high": {
           "type": "array",
           "items": {
-            "yahooFinanceType": "number|null"
+            "type": [
+              "number",
+              "null"
+            ]
           }
         },
         "low": {
           "type": "array",
           "items": {
-            "yahooFinanceType": "number|null"
+            "type": [
+              "number",
+              "null"
+            ]
           }
         },
         "open": {
           "type": "array",
           "items": {
-            "yahooFinanceType": "number|null"
+            "type": [
+              "number",
+              "null"
+            ]
           }
         },
         "close": {
           "type": "array",
           "items": {
-            "yahooFinanceType": "number|null"
+            "type": [
+              "number",
+              "null"
+            ]
           }
         },
         "volume": {
           "type": "array",
           "items": {
-            "yahooFinanceType": "number|null"
+            "type": [
+              "number",
+              "null"
+            ]
           }
         }
       },
@@ -358,7 +386,10 @@
         "adjclose": {
           "type": "array",
           "items": {
-            "yahooFinanceType": "number|null"
+            "type": [
+              "number",
+              "null"
+            ]
           }
         }
       },
@@ -408,22 +439,40 @@
       "type": "object",
       "properties": {
         "high": {
-          "yahooFinanceType": "number|null"
+          "type": [
+            "number",
+            "null"
+          ]
         },
         "low": {
-          "yahooFinanceType": "number|null"
+          "type": [
+            "number",
+            "null"
+          ]
         },
         "open": {
-          "yahooFinanceType": "number|null"
+          "type": [
+            "number",
+            "null"
+          ]
         },
         "close": {
-          "yahooFinanceType": "number|null"
+          "type": [
+            "number",
+            "null"
+          ]
         },
         "volume": {
-          "yahooFinanceType": "number|null"
+          "type": [
+            "number",
+            "null"
+          ]
         },
         "adjclose": {
-          "yahooFinanceType": "number|null"
+          "type": [
+            "number",
+            "null"
+          ]
         }
       },
       "required": [
@@ -441,26 +490,28 @@
         "period1": {
           "anyOf": [
             {
-              "yahooFinanceType": "date"
+              "type": "string",
+              "format": "date-time"
             },
             {
               "type": "string"
             },
             {
-              "yahooFinanceType": "number"
+              "type": "number"
             }
           ]
         },
         "period2": {
           "anyOf": [
             {
-              "yahooFinanceType": "date"
+              "type": "string",
+              "format": "date-time"
             },
             {
               "type": "string"
             },
             {
-              "yahooFinanceType": "number"
+              "type": "number"
             }
           ]
         },
@@ -513,26 +564,28 @@
         "period1": {
           "anyOf": [
             {
-              "yahooFinanceType": "date"
+              "type": "string",
+              "format": "date-time"
             },
             {
               "type": "string"
             },
             {
-              "yahooFinanceType": "number"
+              "type": "number"
             }
           ]
         },
         "period2": {
           "anyOf": [
             {
-              "yahooFinanceType": "date"
+              "type": "string",
+              "format": "date-time"
             },
             {
               "type": "string"
             },
             {
-              "yahooFinanceType": "number"
+              "type": "number"
             }
           ]
         },
@@ -582,26 +635,28 @@
         "period1": {
           "anyOf": [
             {
-              "yahooFinanceType": "date"
+              "type": "string",
+              "format": "date-time"
             },
             {
               "type": "string"
             },
             {
-              "yahooFinanceType": "number"
+              "type": "number"
             }
           ]
         },
         "period2": {
           "anyOf": [
             {
-              "yahooFinanceType": "date"
+              "type": "string",
+              "format": "date-time"
             },
             {
               "type": "string"
             },
             {
-              "yahooFinanceType": "number"
+              "type": "number"
             }
           ]
         },

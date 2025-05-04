@@ -18,7 +18,7 @@
           "type": "object",
           "properties": {
             "targetPrice": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "provider": {
               "type": "string"
@@ -94,13 +94,13 @@
               "type": "string"
             },
             "support": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "resistance": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "stopLoss": {
-              "yahooFinanceType": "number"
+              "type": "number"
             }
           },
           "required": [
@@ -139,7 +139,7 @@
           "type": "object",
           "properties": {
             "color": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "description": {
               "type": "string"
@@ -177,7 +177,7 @@
           "$ref": "#/definitions/InsightsDirection"
         },
         "score": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "scoreDescription": {
           "type": "string"
@@ -186,7 +186,7 @@
           "$ref": "#/definitions/InsightsDirection"
         },
         "sectorScore": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sectorScoreDescription": {
           "type": "string"
@@ -195,7 +195,7 @@
           "$ref": "#/definitions/InsightsDirection"
         },
         "indexScore": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "indexScoreDescription": {
           "type": "string"
@@ -230,22 +230,22 @@
           "type": "object",
           "properties": {
             "innovativeness": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "hiring": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "sustainability": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "insiderSentiments": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "earningsReports": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "dividends": {
-              "yahooFinanceType": "number"
+              "type": "number"
             }
           },
           "additionalProperties": {}
@@ -254,22 +254,22 @@
           "type": "object",
           "properties": {
             "innovativeness": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "hiring": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "sustainability": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "insiderSentiments": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "earningsReports": {
-              "yahooFinanceType": "number"
+              "type": "number"
             },
             "dividends": {
-              "yahooFinanceType": "number"
+              "type": "number"
             }
           },
           "required": [
@@ -306,10 +306,12 @@
           "type": "string"
         },
         "startDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "endDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         }
       },
       "required": [
@@ -339,7 +341,8 @@
           "type": "string"
         },
         "reportDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "reportTitle": {
           "type": "string"
@@ -348,7 +351,7 @@
           "type": "string"
         },
         "targetPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "targetPriceStatus": {
           "type": "string",
@@ -391,7 +394,8 @@
           "type": "string"
         },
         "date": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         }
       },
       "required": [
@@ -416,7 +420,7 @@
           }
         },
         "msBullishBearishSummariesPublishDate": {
-          "yahooFinanceType": "DateInMs"
+          "$ref": "#/definitions/DateInMs"
         },
         "companyName": {
           "type": "string"
@@ -428,7 +432,8 @@
       "additionalProperties": {}
     },
     "DateInMs": {
-      "yahooFinanceType": "date"
+      "type": "string",
+      "format": "date-time"
     },
     "InsightsResearchReport": {
       "type": "object",
@@ -443,7 +448,8 @@
           "type": "string"
         },
         "reportDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "summary": {
           "type": "string"
@@ -482,7 +488,7 @@
           "type": "string"
         },
         "filingDate": {
-          "yahooFinanceType": "DateInMs"
+          "$ref": "#/definitions/DateInMs"
         },
         "snapshotUrl": {
           "type": "string"
@@ -512,7 +518,7 @@
           "type": "string"
         },
         "reportsCount": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "additionalProperties": false

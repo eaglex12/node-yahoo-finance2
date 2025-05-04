@@ -69,7 +69,7 @@
           "type": "string"
         },
         "gmtOffSetMilliseconds": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "market": {
           "type": "string"
@@ -78,181 +78,190 @@
           "type": "boolean"
         },
         "fiftyTwoWeekLowChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLowChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "fiftyTwoWeekHighChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHighChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestamp": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "isEarningsDateEstimate": {
           "type": "boolean"
         },
         "trailingAnnualDividendRate": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingAnnualDividendYield": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsTrailingTwelveMonths": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsForward": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceEpsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sharesOutstanding": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bookValue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "marketCap": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "forwardPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceToBook": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sourceInterval": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "exchangeDataDelayedBy": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "firstTradeDateMilliseconds": {
-          "yahooFinanceType": "DateInMs"
+          "$ref": "#/definitions/DateInMs"
         },
         "priceHint": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "postMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "hasPrePostMarketData": {
           "type": "boolean"
         },
         "regularMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "regularMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "regularMarketDayLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketVolume": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketPreviousClose": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "preMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ask": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bidSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "askSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fullExchangeName": {
           "type": "string"
@@ -261,13 +270,13 @@
           "type": "string"
         },
         "regularMarketOpen": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume3Month": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume10Day": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "displayName": {
           "type": "string"
@@ -279,22 +288,25 @@
           "type": "string"
         },
         "ytdReturn": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthNavReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ipoExpectedDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "newListingDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "nameChangeDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "prevName": {
           "type": "string"
@@ -303,13 +315,13 @@
           "type": "string"
         },
         "pageViewGrowthWeekly": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "openInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "beta": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -336,10 +348,10 @@
       "type": "object",
       "properties": {
         "low": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "high": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -349,7 +361,8 @@
       "additionalProperties": false
     },
     "DateInMs": {
-      "yahooFinanceType": "date"
+      "type": "string",
+      "format": "date-time"
     },
     "QuoteCryptoCurrency": {
       "type": "object",
@@ -419,7 +432,7 @@
           "type": "string"
         },
         "gmtOffSetMilliseconds": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "market": {
           "type": "string"
@@ -428,181 +441,190 @@
           "type": "boolean"
         },
         "fiftyTwoWeekLowChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLowChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "fiftyTwoWeekHighChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHighChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestamp": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "isEarningsDateEstimate": {
           "type": "boolean"
         },
         "trailingAnnualDividendRate": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingAnnualDividendYield": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsTrailingTwelveMonths": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsForward": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceEpsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sharesOutstanding": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bookValue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "marketCap": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "forwardPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceToBook": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sourceInterval": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "exchangeDataDelayedBy": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "firstTradeDateMilliseconds": {
-          "yahooFinanceType": "DateInMs"
+          "$ref": "#/definitions/DateInMs"
         },
         "priceHint": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "postMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "hasPrePostMarketData": {
           "type": "boolean"
         },
         "regularMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "regularMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "regularMarketDayLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketVolume": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketPreviousClose": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "preMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ask": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bidSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "askSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fullExchangeName": {
           "type": "string"
@@ -611,13 +633,13 @@
           "type": "string"
         },
         "regularMarketOpen": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume3Month": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume10Day": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "displayName": {
           "type": "string"
@@ -629,22 +651,25 @@
           "type": "string"
         },
         "ytdReturn": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthNavReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ipoExpectedDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "newListingDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "nameChangeDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "prevName": {
           "type": "string"
@@ -653,16 +678,16 @@
           "type": "string"
         },
         "pageViewGrowthWeekly": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "openInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "beta": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "circulatingSupply": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fromCurrency": {
           "type": "string"
@@ -677,13 +702,14 @@
           "type": "string"
         },
         "volume24Hr": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "volumeAllCurrencies": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "startDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "coinMarketCapLink": {
           "type": "string"
@@ -784,7 +810,7 @@
           "type": "string"
         },
         "gmtOffSetMilliseconds": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "market": {
           "type": "string"
@@ -793,181 +819,190 @@
           "type": "boolean"
         },
         "fiftyTwoWeekLowChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLowChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "fiftyTwoWeekHighChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHighChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestamp": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "isEarningsDateEstimate": {
           "type": "boolean"
         },
         "trailingAnnualDividendRate": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingAnnualDividendYield": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsTrailingTwelveMonths": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsForward": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceEpsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sharesOutstanding": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bookValue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "marketCap": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "forwardPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceToBook": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sourceInterval": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "exchangeDataDelayedBy": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "firstTradeDateMilliseconds": {
-          "yahooFinanceType": "DateInMs"
+          "$ref": "#/definitions/DateInMs"
         },
         "priceHint": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "postMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "hasPrePostMarketData": {
           "type": "boolean"
         },
         "regularMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "regularMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "regularMarketDayLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketVolume": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketPreviousClose": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "preMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ask": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bidSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "askSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fullExchangeName": {
           "type": "string"
@@ -976,13 +1011,13 @@
           "type": "string"
         },
         "regularMarketOpen": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume3Month": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume10Day": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "displayName": {
           "type": "string"
@@ -994,22 +1029,25 @@
           "type": "string"
         },
         "ytdReturn": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthNavReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ipoExpectedDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "newListingDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "nameChangeDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "prevName": {
           "type": "string"
@@ -1018,13 +1056,13 @@
           "type": "string"
         },
         "pageViewGrowthWeekly": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "openInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "beta": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -1115,7 +1153,7 @@
           "type": "string"
         },
         "gmtOffSetMilliseconds": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "market": {
           "type": "string"
@@ -1124,181 +1162,190 @@
           "type": "boolean"
         },
         "fiftyTwoWeekLowChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLowChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "fiftyTwoWeekHighChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHighChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestamp": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "isEarningsDateEstimate": {
           "type": "boolean"
         },
         "trailingAnnualDividendRate": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingAnnualDividendYield": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsTrailingTwelveMonths": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsForward": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceEpsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sharesOutstanding": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bookValue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "marketCap": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "forwardPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceToBook": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sourceInterval": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "exchangeDataDelayedBy": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "firstTradeDateMilliseconds": {
-          "yahooFinanceType": "DateInMs"
+          "$ref": "#/definitions/DateInMs"
         },
         "priceHint": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "postMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "hasPrePostMarketData": {
           "type": "boolean"
         },
         "regularMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "regularMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "regularMarketDayLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketVolume": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketPreviousClose": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "preMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ask": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bidSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "askSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fullExchangeName": {
           "type": "string"
@@ -1307,13 +1354,13 @@
           "type": "string"
         },
         "regularMarketOpen": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume3Month": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume10Day": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "displayName": {
           "type": "string"
@@ -1325,22 +1372,25 @@
           "type": "string"
         },
         "ytdReturn": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthNavReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ipoExpectedDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "newListingDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "nameChangeDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "prevName": {
           "type": "string"
@@ -1349,22 +1399,22 @@
           "type": "string"
         },
         "pageViewGrowthWeekly": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "openInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "beta": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendYield": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netAssets": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "netExpenseRatio": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -1458,7 +1508,7 @@
           "type": "string"
         },
         "gmtOffSetMilliseconds": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "market": {
           "type": "string"
@@ -1467,181 +1517,190 @@
           "type": "boolean"
         },
         "fiftyTwoWeekLowChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLowChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "fiftyTwoWeekHighChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHighChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestamp": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "isEarningsDateEstimate": {
           "type": "boolean"
         },
         "trailingAnnualDividendRate": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingAnnualDividendYield": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsTrailingTwelveMonths": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsForward": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceEpsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sharesOutstanding": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bookValue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "marketCap": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "forwardPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceToBook": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sourceInterval": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "exchangeDataDelayedBy": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "firstTradeDateMilliseconds": {
-          "yahooFinanceType": "DateInMs"
+          "$ref": "#/definitions/DateInMs"
         },
         "priceHint": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "postMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "hasPrePostMarketData": {
           "type": "boolean"
         },
         "regularMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "regularMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "regularMarketDayLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketVolume": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketPreviousClose": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "preMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ask": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bidSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "askSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fullExchangeName": {
           "type": "string"
@@ -1650,13 +1709,13 @@
           "type": "string"
         },
         "regularMarketOpen": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume3Month": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume10Day": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "displayName": {
           "type": "string"
@@ -1668,22 +1727,25 @@
           "type": "string"
         },
         "ytdReturn": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthNavReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ipoExpectedDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "newListingDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "nameChangeDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "prevName": {
           "type": "string"
@@ -1692,19 +1754,19 @@
           "type": "string"
         },
         "pageViewGrowthWeekly": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "openInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "beta": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendRate": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendYield": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -1795,7 +1857,7 @@
           "type": "string"
         },
         "gmtOffSetMilliseconds": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "market": {
           "type": "string"
@@ -1804,181 +1866,190 @@
           "type": "boolean"
         },
         "fiftyTwoWeekLowChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLowChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "fiftyTwoWeekHighChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHighChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestamp": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "isEarningsDateEstimate": {
           "type": "boolean"
         },
         "trailingAnnualDividendRate": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingAnnualDividendYield": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsTrailingTwelveMonths": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsForward": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceEpsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sharesOutstanding": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bookValue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "marketCap": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "forwardPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceToBook": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sourceInterval": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "exchangeDataDelayedBy": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "firstTradeDateMilliseconds": {
-          "yahooFinanceType": "DateInMs"
+          "$ref": "#/definitions/DateInMs"
         },
         "priceHint": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "postMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "hasPrePostMarketData": {
           "type": "boolean"
         },
         "regularMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "regularMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "regularMarketDayLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketVolume": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketPreviousClose": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "preMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ask": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bidSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "askSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fullExchangeName": {
           "type": "string"
@@ -1987,13 +2058,13 @@
           "type": "string"
         },
         "regularMarketOpen": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume3Month": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume10Day": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "displayName": {
           "type": "string"
@@ -2005,22 +2076,25 @@
           "type": "string"
         },
         "ytdReturn": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthNavReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ipoExpectedDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "newListingDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "nameChangeDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "prevName": {
           "type": "string"
@@ -2029,13 +2103,13 @@
           "type": "string"
         },
         "pageViewGrowthWeekly": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "openInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "beta": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "headSymbolAsString": {
           "type": "string"
@@ -2047,10 +2121,12 @@
           "type": "string"
         },
         "expireDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "expireIsoDate": {
-          "yahooFinanceType": "number"
+          "type": "string",
+          "format": "date-time"
         }
       },
       "required": [
@@ -2146,7 +2222,7 @@
           "type": "string"
         },
         "gmtOffSetMilliseconds": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "market": {
           "type": "string"
@@ -2155,181 +2231,190 @@
           "type": "boolean"
         },
         "fiftyTwoWeekLowChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLowChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "fiftyTwoWeekHighChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHighChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestamp": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "isEarningsDateEstimate": {
           "type": "boolean"
         },
         "trailingAnnualDividendRate": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingAnnualDividendYield": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsTrailingTwelveMonths": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsForward": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceEpsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sharesOutstanding": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bookValue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "marketCap": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "forwardPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceToBook": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sourceInterval": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "exchangeDataDelayedBy": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "firstTradeDateMilliseconds": {
-          "yahooFinanceType": "DateInMs"
+          "$ref": "#/definitions/DateInMs"
         },
         "priceHint": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "postMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "hasPrePostMarketData": {
           "type": "boolean"
         },
         "regularMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "regularMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "regularMarketDayLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketVolume": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketPreviousClose": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "preMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ask": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bidSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "askSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fullExchangeName": {
           "type": "string"
@@ -2338,13 +2423,13 @@
           "type": "string"
         },
         "regularMarketOpen": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume3Month": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume10Day": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "displayName": {
           "type": "string"
@@ -2356,22 +2441,25 @@
           "type": "string"
         },
         "ytdReturn": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthNavReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ipoExpectedDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "newListingDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "nameChangeDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "prevName": {
           "type": "string"
@@ -2380,13 +2468,13 @@
           "type": "string"
         },
         "pageViewGrowthWeekly": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "openInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "beta": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -2477,7 +2565,7 @@
           "type": "string"
         },
         "gmtOffSetMilliseconds": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "market": {
           "type": "string"
@@ -2486,181 +2574,190 @@
           "type": "boolean"
         },
         "fiftyTwoWeekLowChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLowChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "fiftyTwoWeekHighChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHighChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestamp": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "isEarningsDateEstimate": {
           "type": "boolean"
         },
         "trailingAnnualDividendRate": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingAnnualDividendYield": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsTrailingTwelveMonths": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsForward": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceEpsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sharesOutstanding": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bookValue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "marketCap": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "forwardPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceToBook": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sourceInterval": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "exchangeDataDelayedBy": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "firstTradeDateMilliseconds": {
-          "yahooFinanceType": "DateInMs"
+          "$ref": "#/definitions/DateInMs"
         },
         "priceHint": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "postMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "hasPrePostMarketData": {
           "type": "boolean"
         },
         "regularMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "regularMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "regularMarketDayLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketVolume": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketPreviousClose": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "preMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ask": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bidSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "askSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fullExchangeName": {
           "type": "string"
@@ -2669,13 +2766,13 @@
           "type": "string"
         },
         "regularMarketOpen": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume3Month": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume10Day": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "displayName": {
           "type": "string"
@@ -2687,22 +2784,25 @@
           "type": "string"
         },
         "ytdReturn": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthNavReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ipoExpectedDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "newListingDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "nameChangeDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "prevName": {
           "type": "string"
@@ -2711,22 +2811,23 @@
           "type": "string"
         },
         "pageViewGrowthWeekly": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "openInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "beta": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "strike": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "expireDate": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "expireIsoDate": {
-          "yahooFinanceType": "number"
+          "type": "string",
+          "format": "date-time"
         }
       },
       "required": [
@@ -2822,7 +2923,7 @@
           "type": "string"
         },
         "gmtOffSetMilliseconds": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "market": {
           "type": "string"
@@ -2831,181 +2932,190 @@
           "type": "boolean"
         },
         "fiftyTwoWeekLowChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLowChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "fiftyTwoWeekHighChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHighChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyTwoWeekChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "dividendDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestamp": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampStart": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "earningsCallTimestampEnd": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "isEarningsDateEstimate": {
           "type": "boolean"
         },
         "trailingAnnualDividendRate": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingAnnualDividendYield": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsTrailingTwelveMonths": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsForward": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "epsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceEpsCurrentYear": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sharesOutstanding": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bookValue": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fiftyDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverage": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "twoHundredDayAverageChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "marketCap": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "forwardPE": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "priceToBook": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "sourceInterval": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "exchangeDataDelayedBy": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "firstTradeDateMilliseconds": {
-          "yahooFinanceType": "DateInMs"
+          "$ref": "#/definitions/DateInMs"
         },
         "priceHint": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "postMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "postMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "hasPrePostMarketData": {
           "type": "boolean"
         },
         "regularMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "regularMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayHigh": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketDayRange": {
-          "yahooFinanceType": "TwoNumberRange"
+          "$ref": "#/definitions/TwoNumberRange"
         },
         "regularMarketDayLow": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketVolume": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "regularMarketPreviousClose": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChange": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketChangePercent": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "preMarketTime": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "preMarketPrice": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bid": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ask": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "bidSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "askSize": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "fullExchangeName": {
           "type": "string"
@@ -3014,13 +3124,13 @@
           "type": "string"
         },
         "regularMarketOpen": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume3Month": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "averageDailyVolume10Day": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "displayName": {
           "type": "string"
@@ -3032,22 +3142,25 @@
           "type": "string"
         },
         "ytdReturn": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "trailingThreeMonthNavReturns": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "ipoExpectedDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "newListingDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "nameChangeDate": {
-          "yahooFinanceType": "date"
+          "type": "string",
+          "format": "date-time"
         },
         "prevName": {
           "type": "string"
@@ -3056,13 +3169,13 @@
           "type": "string"
         },
         "pageViewGrowthWeekly": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "openInterest": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "beta": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -3255,7 +3368,7 @@
       "type": "object",
       "properties": {
         "size": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [

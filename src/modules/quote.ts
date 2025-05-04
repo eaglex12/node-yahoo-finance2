@@ -174,7 +174,7 @@ export interface QuoteFuture extends QuoteBase {
   contractSymbol: boolean; // false
   underlyingExchangeSymbol: string; // "GCM22.CMX"
   expireDate: Date; // 1656374400
-  expireIsoDate: number; // 2022
+  expireIsoDate: Date; // "2025-04-28T00:00:00Z"
 }
 
 export interface QuoteIndex extends QuoteBase {
@@ -186,7 +186,7 @@ export interface QuoteOption extends QuoteBase {
   strike: number;
   openInterest: number;
   expireDate: number;
-  expireIsoDate: number;
+  expireIsoDate: Date; // "2025-04-28T00:00:00Z"
   underlyingSymbol: string;
 }
 

@@ -26,9 +26,73 @@ const byType = {
     _logObj: (obj: unknown) => void,
     errors: ValidationError[],
     instancePath: string,
-    _dataCtx: DataCtx | undefined,
+    dataCtx: DataCtx | undefined,
     schemaPath: string,
   ) {
+    if (schema.format === "date-time") {
+      if (input instanceof Date) {
+        // Validate existing date objects.
+        // Generally we receive JSON but in the case of "historical", the
+        // csv parser does the date conversion, and we want to validate
+        // afterwards.
+        return true;
+      }
+
+      if (typeof input === "number") {
+        // XXX TODO tmp workaround; actually need get the $ref name and check for "DateInMs"
+        if (input.toString().length >= 16) {
+          return set(dataCtx, new Date(input), instancePath);
+        }
+
+        return set(dataCtx, new Date(input * 1000), instancePath);
+      }
+
+      if (typeof input === "object" && input !== null) {
+        if (Object.keys(input).length === 0) {
+          // Value of {} becomes null
+          // Note, TypeScript types should be "data | null"
+
+          // Untested but should work, just need a test case
+          // throw new Error("Untested code path");
+          if (Array.isArray(schema.type) && schema.type.includes("null")) {
+            return set(dataCtx, null, instancePath);
+          } else {
+            errors.push({
+              instancePath,
+              schemaPath,
+              keyword: "yahooFinanceType",
+              message: "Got {}->null for 'date', did you want 'date | null' ?",
+              params: { schema },
+              data: input,
+            });
+            return false;
+          }
+        }
+        if ("raw" in input && typeof input.raw === "number") {
+          return set(dataCtx, new Date(input.raw * 1000), instancePath);
+        }
+      }
+
+      if (typeof input === "string") {
+        if (
+          input.match(/^\d{4,4}-\d{2,2}-\d{2,2}$/) ||
+          input.match(
+            /^\d{4,4}-\d{2,2}-\d{2,2}T\d{2,2}:\d{2,2}:\d{2,2}(\.\d{3,3})?Z$/,
+          )
+        ) {
+          return set(dataCtx, new Date(input), instancePath);
+        }
+      }
+
+      errors.push({
+        instancePath,
+        schemaPath,
+        message: "Expecting date'ish",
+        params: { schema },
+        data: input,
+      });
+      return false;
+    }
     if (typeof input !== "string") {
       errors.push({
         instancePath,
@@ -52,20 +116,65 @@ const byType = {
 
   number(
     input: unknown,
-    _schema: JSONSchema,
+    schema: JSONSchema,
     _definitions: JSONSchema["definitions"],
     _logger: Logger,
     _logObj: (obj: unknown) => void,
     errors: ValidationError[],
     instancePath: string,
-    _dataCtx: DataCtx | undefined,
+    dataCtx: DataCtx | undefined,
     schemaPath: string,
   ) {
+    // YahooFinance types
+
+    if (typeof input === "string") {
+      const float = Number.parseFloat(input);
+      if (Number.isNaN(float)) {
+        errors.push({
+          instancePath,
+          schemaPath,
+          keyword: "yahooFinanceType",
+          message: "Number.parseFloat returned NaN",
+          params: { schema },
+          data: input,
+        });
+        return false;
+      }
+      return set(dataCtx, float, instancePath);
+    }
+
+    if (typeof input === "object" && input !== null) {
+      if (Object.keys(input).length === 0) {
+        // Value of {} becomes null
+        // Note, TypeScript types should be "number | null"
+        if (Array.isArray(schema.type) && schema.type.includes("null")) {
+          return set(dataCtx, null, instancePath);
+        } else {
+          errors.push({
+            instancePath,
+            schemaPath,
+            keyword: "yahooFinanceType",
+            message:
+              "Got {}->null for 'number', did you want 'number | null' ?",
+            params: { schema },
+            data: input,
+          });
+          return false;
+        }
+      }
+
+      if ("raw" in input && typeof input.raw === "number") {
+        return set(dataCtx, input.raw, instancePath);
+      }
+    }
+
+    // Regular number validation follows
+
     if (typeof input !== "number") {
       errors.push({
         instancePath,
         schemaPath,
-        message: "Expected a number",
+        message: "Expected a number'ish",
         data: input,
       });
       return false;
@@ -102,9 +211,18 @@ const byType = {
     _logObj: (obj: unknown) => void,
     errors: ValidationError[],
     instancePath: string,
-    _dataCtx: DataCtx | undefined,
+    dataCtx: DataCtx | undefined,
     schemaPath: string,
   ) {
+    // YahooFinance type
+    if (
+      typeof input === "object" && input !== null &&
+      Object.keys(input).length === 0
+    ) {
+      set(dataCtx, null, instancePath);
+      return true;
+    }
+
     if (input !== null) {
       errors.push({
         instancePath,
@@ -140,32 +258,92 @@ const byType = {
   },
 
   object(
-    _input: unknown,
+    input: unknown,
     schema: JSONSchema,
     definitions: JSONSchema["definitions"],
     logger: Logger,
     logObj: (obj: unknown) => void,
     errors: ValidationError[],
     instancePath: string,
-    _dataCtx: DataCtx | undefined,
+    dataCtx: DataCtx | undefined,
     schemaPath: string,
   ) {
-    if (typeof _input !== "object") {
+    // TwoNumberRange
+    const props = schema.properties;
+    if (
+      props &&
+      //
+      props.low && typeof props.low === "object" &&
+      props.low.type === "number" &&
+      props.high && typeof props.high === "object" &&
+      props.high.type === "number" &&
+      //
+      schema.required &&
+      schema.required.length === 2 && schema.required.includes("low") &&
+      schema.required.includes("high") &&
+      //
+      schema.additionalProperties === false
+    ) {
+      if (
+        typeof input === "object" &&
+        input !== null &&
+        "low" in input &&
+        typeof input.low === "number" &&
+        "high" in input &&
+        typeof input.high === "number"
+      ) {
+        return true;
+      }
+      if (typeof input === "string") {
+        const parts = input.split("-").map(parseFloat);
+        if (Number.isNaN(parts[0]) || Number.isNaN(parts[1])) {
+          errors.push({
+            // keyword: "yahooFinanceType",
+            instancePath,
+            schemaPath,
+
+            message: "yahooFinanceType: Number.parseFloat returned NaN: [" +
+              parts.join(",") +
+              "]",
+            // params: { schema, data },
+            schema,
+            data: input,
+          });
+          return false;
+        }
+        return set(dataCtx, { low: parts[0], high: parts[1] }, instancePath);
+      }
+      errors.push({
+        // keyword: "yahooFinanceType",
+        instancePath,
+        schemaPath,
+        message: "TwoNumberRange: Unexpected format",
+        // params: { schema, data },
+        schema,
+        data: input,
+      });
+      return false;
+    }
+    // end TwoNumberRange.
+
+    if (typeof input !== "object") {
+      console.log({ schemaPath, schema });
+
       errors.push({
         instancePath,
         schemaPath,
         message: "Expected an object",
-        data: _input,
+        data: input,
       });
       return false;
     }
 
-    const input = _input as Record<string, unknown>;
-    const dataCtx = { parentData: input, parentDataProperty: "" };
+    const _input = input as Record<string, unknown>;
+    const _dataCtx = { parentData: _input, parentDataProperty: "" };
 
     if (schema.required) {
       for (const key of schema.required) {
-        if (!(key in input)) {
+        if (!(key in _input)) {
           errors.push({
             instancePath,
             schemaPath: schemaPath + "/required",
@@ -176,9 +354,9 @@ const byType = {
       }
     }
 
-    for (const [key, value] of Object.entries(input)) {
+    for (const [key, value] of Object.entries(_input)) {
       const propSchema = schema.properties?.[key];
-      dataCtx.parentDataProperty = key;
+      _dataCtx.parentDataProperty = key;
 
       if (propSchema) {
         validateAndCoerce(
@@ -189,7 +367,7 @@ const byType = {
           logObj,
           errors,
           instancePath + "/" + key,
-          dataCtx,
+          _dataCtx,
           schemaPath,
         );
       } else {
@@ -201,7 +379,7 @@ const byType = {
             params: {
               additionalProperty: key,
             },
-            data: input,
+            data: _input,
           });
         } else if (schema.additionalProperties) {
           validateAndCoerce(
@@ -212,7 +390,7 @@ const byType = {
             logObj,
             errors,
             instancePath + "/" + key,
-            dataCtx,
+            _dataCtx,
             schemaPath + "/additionalProperties",
           );
         }
@@ -276,6 +454,7 @@ function set(
   }
 }
 
+/*
 function yahooFinanceType(
   data: unknown,
   schema: string,
@@ -285,141 +464,7 @@ function yahooFinanceType(
   dataCtx?: DataCtx,
   schemaPath: string = "",
 ) {
-  if (schema === "number" || schema === "number|null") {
-    if (typeof data === "number") return true;
-
-    if (typeof data === "string") {
-      const float = Number.parseFloat(data);
-      if (Number.isNaN(float)) {
-        errors.push({
-          instancePath,
-          schemaPath,
-          keyword: "yahooFinanceType",
-          message: "Number.parseFloat returned NaN",
-          params: { schema, data },
-          data,
-        });
-        return false;
-      }
-      return set(dataCtx, float, instancePath);
-    }
-
-    if (data === null) {
-      if (schema === "number|null") {
-        return true;
-      } else {
-        errors.push({
-          instancePath,
-          schemaPath,
-          keyword: "yahooFinanceType",
-          message: "Expecting number'ish but got null",
-          params: { schema, data },
-        });
-        return false;
-      }
-    }
-
-    if (typeof data === "object") {
-      if (Object.keys(data).length === 0) {
-        // Value of {} becomes null
-        // Note, TypeScript types should be "number | null"
-        if (schema === "number|null") {
-          return set(dataCtx, null, instancePath);
-        } else {
-          errors.push({
-            instancePath,
-            schemaPath,
-            keyword: "yahooFinanceType",
-            message:
-              "Got {}->null for 'number', did you want 'number | null' ?",
-            params: { schema, data },
-          });
-          return false;
-        }
-      }
-      if ("raw" in data && typeof data.raw === "number") {
-        return set(dataCtx, data.raw, instancePath);
-      }
-    }
-
-    errors.push({
-      instancePath,
-      schemaPath,
-      keyword: "yahooFinanceType",
-      message: "Expecting number'ish",
-      params: { schema, data },
-    });
-    return false;
-  } else if (schema === "date" || schema === "date|null") {
-    if (data instanceof Date) {
-      // Validate existing date objects.
-      // Generally we receive JSON but in the case of "historical", the
-      // csv parser does the date conversion, and we want to validate
-      // afterwards.
-      return true;
-    }
-
-    if (typeof data === "number") {
-      return set(dataCtx, new Date(data * 1000), instancePath);
-    }
-
-    if (data === null) {
-      if (schema === "date|null") {
-        return true;
-      } else {
-        errors.push({
-          instancePath,
-          schemaPath,
-          keyword: "yahooFinanceType",
-          message: "Expecting date'ish but got null",
-          params: { schema, data },
-        });
-        return false;
-      }
-    }
-
-    if (typeof data === "object") {
-      if (Object.keys(data).length === 0) {
-        // Value of {} becomes null
-        // Note, TypeScript types should be "data | null"
-        if (schema === "date|null") {
-          return set(dataCtx, null, instancePath);
-        } else {
-          errors.push({
-            instancePath,
-            schemaPath,
-            keyword: "yahooFinanceType",
-            message: "Got {}->null for 'date', did you want 'date | null' ?",
-            params: { schema, data },
-          });
-          return false;
-        }
-      }
-      if ("raw" in data && typeof data.raw === "number") {
-        return set(dataCtx, new Date(data.raw * 1000), instancePath);
-      }
-    }
-
-    if (typeof data === "string") {
-      if (
-        data.match(/^\d{4,4}-\d{2,2}-\d{2,2}$/) ||
-        data.match(
-          /^\d{4,4}-\d{2,2}-\d{2,2}T\d{2,2}:\d{2,2}:\d{2,2}(\.\d{3,3})?Z$/,
-        )
-      ) {
-        return set(dataCtx, new Date(data), instancePath);
-      }
-    }
-
-    errors.push({
-      instancePath,
-      schemaPath,
-      keyword: "yahooFinanceType",
-      message: "Expecting date'ish",
-      params: { schema, data },
-    });
-    return false;
-  } else if (schema === "DateInMs") {
+  if (schema === "DateInMs") {
     if (typeof data === "number") {
       return set(dataCtx, new Date(data), instancePath);
     } else {
@@ -434,46 +479,6 @@ function yahooFinanceType(
       });
       return false;
     }
-  } else if (schema === "TwoNumberRange") {
-    if (
-      typeof data === "object" &&
-      data !== null &&
-      "low" in data &&
-      typeof data.low === "number" &&
-      "high" in data &&
-      typeof data.high === "number"
-    ) {
-      return true;
-    }
-    if (typeof data === "string") {
-      const parts = data.split("-").map(parseFloat);
-      if (Number.isNaN(parts[0]) || Number.isNaN(parts[1])) {
-        errors.push({
-          // keyword: "yahooFinanceType",
-          instancePath,
-          schemaPath,
-
-          message: "yahooFinanceType: Number.parseFloat returned NaN: [" +
-            parts.join(",") +
-            "]",
-          // params: { schema, data },
-          schema,
-          data,
-        });
-        return false;
-      }
-      return set(dataCtx, { low: parts[0], high: parts[1] }, instancePath);
-    }
-    errors.push({
-      // keyword: "yahooFinanceType",
-      instancePath,
-      schemaPath,
-      message: "TwoNumberRange: Unexpected format",
-      // params: { schema, data },
-      schema,
-      data,
-    });
-    return false;
   } else {
     errors.push({
       instancePath,
@@ -489,6 +494,7 @@ function yahooFinanceType(
 
   // return true;
 }
+*/
 
 function schemaFromSchemaOrSchemaKey(
   schemaOrSchemaKey: JSONSchema | string,
@@ -551,7 +557,7 @@ export default function validateAndCoerce(
   if (schema.anyOf) {
     const allErrors: ValidationError[] = [];
     let _errors: ValidationError[] = [];
-    /// Since yahooFinanceType can mutute, we need to save unmodified state.
+    /// Since yahooFinanceType can mutate, we need to save unmodified state.
     const serializedInput = JSON.stringify(input);
     let i = 0;
     for (const subSchema of schema.anyOf as JSONSchema[]) {
@@ -591,8 +597,10 @@ export default function validateAndCoerce(
         // schema,
         subErrors: allErrors,
       });
-      return false;
+      // return false;
+      return errors;
     }
+    /*
   } else if (schema.yahooFinanceType) {
     yahooFinanceType(
       input,
@@ -603,6 +611,7 @@ export default function validateAndCoerce(
       dataCtx,
       schemaPath!, // ! because of "if null" check above
     );
+  */
   } else {
     if (schema.type === undefined) {
       // This is actually a no-op.  With schema of {}, accept anything and everything.
@@ -645,7 +654,8 @@ export default function validateAndCoerce(
           message: `Expected one of ${schema.type.join(", ")}`,
           data: input,
         });
-        return false;
+        // return false;
+        return errors;
       }
     } else {
       // @ts-ignore: another day

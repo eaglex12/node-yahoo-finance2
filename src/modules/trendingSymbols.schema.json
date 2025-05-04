@@ -18,7 +18,7 @@
       "type": "object",
       "properties": {
         "count": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "quotes": {
           "type": "array",
@@ -27,10 +27,10 @@
           }
         },
         "jobTimestamp": {
-          "yahooFinanceType": "number"
+          "type": "number"
         },
         "startInterval": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "required": [
@@ -51,7 +51,7 @@
           "type": "string"
         },
         "count": {
-          "yahooFinanceType": "number"
+          "type": "number"
         }
       },
       "additionalProperties": false
