@@ -28,7 +28,7 @@ export interface ChartResultArray {
 
 export interface ChartResultArrayQuote {
   [key: string]: unknown;
-  // date: Date;
+  date: Date;
   high: number | null;
   low: number | null;
   open: number | null;
