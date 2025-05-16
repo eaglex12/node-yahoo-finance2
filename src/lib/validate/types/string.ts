@@ -15,6 +15,7 @@ export const string: Validator = function string(
   instancePath: string,
   dataCtx: DataCtx | undefined,
   schemaPath: string,
+  refs?: string[],
 ) {
   if (schema.format === "date-time") {
     if (input instanceof Date) {
@@ -26,8 +27,9 @@ export const string: Validator = function string(
     }
 
     if (typeof input === "number") {
-      // XXX TODO tmp workaround; actually need get the $ref name and check for "DateInMs"
-      if (input.toString().length >= 16) {
+      if (refs && refs[refs.length - 1] === "DateInMs") {
+        // XXX TODO tmp workaround; actually need get the $ref name and check for "DateInMs"
+        // if (input.toString().length >= 13) {
         set(dataCtx, new Date(input), instancePath);
         return true;
       }

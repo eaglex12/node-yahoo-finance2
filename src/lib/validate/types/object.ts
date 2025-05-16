@@ -15,8 +15,11 @@ export const object: Validator = function object(
   instancePath: string,
   dataCtx: DataCtx | undefined,
   schemaPath: string,
+  refs?: string[],
 ) {
   // TwoNumberRange
+  if (refs && refs[refs.length - 1] === "TwoNumberRange") {
+    /*
   const props = schema.properties;
   if (
     props &&
@@ -32,6 +35,7 @@ export const object: Validator = function object(
     //
     schema.additionalProperties === false
   ) {
+  */
     if (
       typeof input === "object" &&
       input !== null &&

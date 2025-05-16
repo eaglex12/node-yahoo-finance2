@@ -99,7 +99,7 @@ function yahooFinanceType(
 function schemaFromSchemaOrSchemaKey(
   schemaOrSchemaKey: JSONSchema | string,
   definitions: JSONSchema["definitions"],
-): [JSONSchema, string] {
+): [JSONSchema, string, undefined | string[]] {
   let schema: JSONSchema;
   let path: string = "";
 
@@ -122,14 +122,16 @@ function schemaFromSchemaOrSchemaKey(
     if (schema.$id) path = schema.$id;
   }
 
+  let refs: string[] | undefined;
   while (schema.$ref) {
-    schema = definitions[
-      schema.$ref.replace("#/definitions/", "")
-    ] as JSONSchema;
+    if (!refs) refs = [];
+    const ref = schema.$ref.replace("#/definitions/", "");
+    refs.push(ref);
+    schema = definitions[ref] as JSONSchema;
     path = schema.$ref!;
   }
 
-  return [schema as JSONSchema, path];
+  return [schema as JSONSchema, path, refs];
 }
 
 export interface DataCtx {
@@ -146,7 +148,7 @@ export default function validateAndCoerce(
   dataCtx?: DataCtx,
   schemaPath: string | null = null,
 ) {
-  const [schema, foundSchemaPath] = schemaFromSchemaOrSchemaKey(
+  const [schema, foundSchemaPath, refs] = schemaFromSchemaOrSchemaKey(
     schemaOrSchemaKey,
     ctx.definitions,
   );
@@ -239,6 +241,7 @@ export default function validateAndCoerce(
           instancePath,
           dataCtx,
           schemaPath,
+          refs,
         );
         if (!_errors.length) break;
       }
@@ -269,6 +272,7 @@ export default function validateAndCoerce(
         instancePath,
         dataCtx,
         schemaPath,
+        refs,
       );
     }
   }
