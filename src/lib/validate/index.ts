@@ -21,7 +21,7 @@ export type ValidationError = {
 export type ValidationCtx = {
   definitions: JSONSchema["definitions"];
   logger: Logger;
-  logObj: (obj: unknown) => void;
+  logObj: (obj: unknown, opts?: { depth?: number }) => void;
 };
 
 export type Validator = (

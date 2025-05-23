@@ -32,7 +32,7 @@ export interface ValidateParams {
   schemaKey: string;
   options: ValidationOptions;
   logger: Logger;
-  logObj: (obj: unknown) => void;
+  logObj: (obj: unknown, opts?: { depth?: number }) => void;
 }
 
 const doneAlready = new Map();
@@ -241,7 +241,7 @@ function validate({
       logger.info(
         "The following result did not validate with schema: " + schemaKey,
       );
-      logObj(errors);
+      logObj(errors, { depth: 5 });
       // logObj(object);
       logger.info(`
 This may happen intermittently and you should catch errors appropriately.

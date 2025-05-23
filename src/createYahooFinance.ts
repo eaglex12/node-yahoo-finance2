@@ -12,7 +12,7 @@ class YahooFinance {
     fetch: typeof fetch;
     fetchDevel?: () => Promise<typeof fetch>;
   };
-  _logObj: (obj: unknown) => void;
+  _logObj: (obj: unknown, opts?: { depth?: number }) => void;
 
   constructor(options?: YahooFinanceOptions) {
     /// XXX TODO mergeoptions from setGlobalConfig
@@ -60,7 +60,8 @@ class YahooFinance {
     // @ts-ignore: relevant for ts-json-schema-generator
     this._logObj = Deno.stdout.isTerminal()
       // deno-lint-ignore no-explicit-any
-      ? (obj: any) => this._opts.logger!.dir(obj, { depth: 4, colors: true })
+      ? (obj: any, opts?: { depth?: number }) =>
+        this._opts.logger!.dir(obj, { depth: opts?.depth ?? 4, colors: true })
       // deno-lint-ignore no-explicit-any
       : (obj: any) => this._opts.logger!.info(JSON.stringify(obj, null, 2));
   }
