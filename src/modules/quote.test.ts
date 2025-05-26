@@ -35,6 +35,7 @@ describe("quote", () => {
       "ZRC-USD", // Low cap crypto (#403)
       "SOHO", // "openInterest" prop (#445)
       "VWRL.L", // ETF with no dividendYield, expenseRatio (#914)
+      "ZGLD.SW", // ETF with no netAssets (#916)
     ],
   });
 

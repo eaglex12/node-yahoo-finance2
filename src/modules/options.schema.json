@@ -1501,7 +1501,6 @@
         "language",
         "market",
         "marketState",
-        "netAssets",
         "priceHint",
         "quoteType",
         "region",

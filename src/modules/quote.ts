@@ -158,7 +158,7 @@ export interface QuoteCurrency extends QuoteBase {
 export interface QuoteEtf extends QuoteBase {
   quoteType: "ETF";
   dividendYield?: number; // 0.54
-  netAssets: number; // 328302690000
+  netAssets?: number; // 328302690000
   netExpenseRatio?: number; // 0.2
 }
 
