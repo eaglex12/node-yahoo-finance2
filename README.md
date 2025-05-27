@@ -17,6 +17,32 @@ info see [UPGRADING](./docs/UPGRADING.md).
 [Live Demo on CodeSandbox](https://codesandbox.io/p/devbox/yahoo-finance2-nextjs-sy42pv)
 (Updated 2024-06-17; NextJS with both RSC and Hook-Relay examples)
 
+
+## Node.js Version Support Notice
+
+This package supports **Node.js 18.20.4 and later** versions (active LTS). 
+
+Older Node.js versions (such as 18.12.x or below) may cause runtime errors,  
+## including missing APIs like `getSetCookie()`. 
+
+> **Note:** Node 18 is now end-of-life (EOL), so upgrading to the latest Node 18.x or Node 20.x LTS is strongly recommended.
+
+If you experience errors related to unsupported Node.js versions, please upgrade your environment.
+
+---
+
+If you are using a supported version and still encounter issues, please [open an issue](https://github.com/gadicc/node-yahoo-finance2/issues) describing your problem with Node version details.
+
+---
+
+For more info on upgrading Node.js, see:
+
+- [Node.js official downloads](https://nodejs.org/en/download/)
+- [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm)
+
+---
+
+
 ## Unofficial API
 
 This project is neither created nor endorsed by Yahoo Inc.  Yahoo does not
